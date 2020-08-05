@@ -29,7 +29,7 @@ class Bot {
     }
   }
   async init() {
-    this.browser = await puppeteer.launch({ headless: false })
+    this.browser = await puppeteer.launch({ headless: true })
     this.page = await this.browser.newPage()
   }
   async login() {
